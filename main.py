@@ -1,13 +1,13 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-from urllib import request
 from sklearn import linear_model
 from sklearn.metrics import r2_score
+# from urllib import request
 
 local_file = 'data.csv'
-url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%202/data/FuelConsumptionCo2.csv"
-request.urlretrieve(url, local_file)
+# url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%202/data/FuelConsumptionCo2.csv"
+# request.urlretrieve(url, local_file)
 df = pd.read_csv(local_file)
 
 cdf = df[['ENGINESIZE','CYLINDERS','FUELCONSUMPTION_COMB','CO2EMISSIONS']]
